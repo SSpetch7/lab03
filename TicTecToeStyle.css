@@ -1,7 +1,39 @@
-table tr, td{
-    border: 1px solid black;
-    padding: 20px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-table tr{
-    margin-left: 50px;
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #eee;    
+}
+.board{
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: auto auto auto;
+}
+
+.board .board{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+#one, #two, #three{
+    border-top: none;
+}
+#one, #four, #seven{
+    border-left: none;
+}
+#seven, #eight, #nine{
+    border-bottom: none;
+}
+#three, #six, #nine{
+    border-right: none;
 }
