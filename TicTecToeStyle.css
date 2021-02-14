@@ -14,18 +14,17 @@
     display: grid;
     width: 300px;
     height: 300px;
-    grid-template-columns: auto auto auto;
-    
+    grid-template-columns: auto auto auto;   
 }
 
-.board .board{
+.block{
     display: flex;
     width: 100px;
     height: 100px;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    border: 3px solid black;
+    border: 5px solid rgb(223, 99, 99);
 }
 #one, #two, #three{
     border-top: none;
