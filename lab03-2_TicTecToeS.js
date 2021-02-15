@@ -10,13 +10,3 @@ for (var i = 0; i < image.length; i++) {
     removeEventListener
 }
 
-function compic(){
-    var rand=Math.floor(Math.random() * 10);
-    if(image[rand].id=='x'||image[rand].id=='o'){
-        rand=Math.floor(Math.random() * 10);
-    }
-    else(image[rand].id!='x'&&image[rand].id!='o'){
-        image[rand].src='o.jpg'
-        image[rand].document.getElementsByClassName("block").classname='o';
-    }
-}
